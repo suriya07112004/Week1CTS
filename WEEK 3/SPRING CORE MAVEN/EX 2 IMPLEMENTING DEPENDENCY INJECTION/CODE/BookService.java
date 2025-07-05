@@ -14,6 +14,7 @@ public class BookService {
         
         if (bookRepository != null) {
             bookRepository.saveBook(bookName);
+            System.out.println(" BookRepository is initialized. Dependency injection passed.");
             System.out.println(" Book has been successfully added.\n");
         } else {
             System.out.println(" BookRepository is not initialized. Dependency injection failed.");
